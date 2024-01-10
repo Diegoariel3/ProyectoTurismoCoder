@@ -1,10 +1,10 @@
-@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700;900&display=swap');
 * {
     margin: 0;
     padding: 0;
+    font-family: 'Playfair Display', serif;
 }
 html {
-    font-family: 'Lato', sans-serif;
     background-color: rgba(254, 217, 237, 0.5);
 }
     .primary_nav img {
@@ -19,7 +19,7 @@ header {
     header h2 {
         color: rgb(103, 114, 157);
         font-size: 50px;
-        font-weight: bold;
+        font-weight: 900;
         text-align: center;
     }
     header img {
@@ -62,7 +62,7 @@ header {
         text-align: center;
         margin: 20px;
     }
-    .main_contain p {
+    .main_contain p , .style-p {
         color: gray;
         font-size: 16px;
         text-align: center;
@@ -183,9 +183,15 @@ header {
     background-color: rgb(103, 114, 157);
 }
 .title-places {
-    color: hsla(278, 70%, 48%, 0.8);
+    color: rgb(103, 114, 157);
     text-align: center;
-    margin: 20px;
+    font-weight: 700;
+    text-transform: uppercase;
+    margin: 30px;
+}
+.bg-custom {
+    background-color: rgb(103, 114, 157); 
+    color: rgb(254, 217, 237);
 }
 /* ends page places*/
 /* starts page activities*/
@@ -284,11 +290,6 @@ header {
             height: 100vh;
             width: auto;
         }
-    .primary_nav img {
-        height: 50px;
-    }
-    .primary_nav ul {
-        display: none;
     }
     .header_title h2 span {
         color: #383a39;
@@ -315,7 +316,6 @@ header {
     width: 70%;
    }
    /*Contact*/
-}
 @media (width > 450px) {
     .ww-50 {
         width: 100%;
