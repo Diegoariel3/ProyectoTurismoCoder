@@ -195,26 +195,11 @@ header {
 }
 /* ends page places*/
 /* starts page activities*/
-.cards_activities article  {
-    border: 2px solid rgba(145, 37, 208, 0.8);
-    margin: 10px;
-    padding: 20px;
-    width: 40%;
-    display: inline-block;
-    background-color: rgba(145, 37, 208, 0.8);
+.s-icon i {
+    color: red;
+    font-size: x-large;
 }
-.cards_activities img {
-    height: 200px;
-}
-.cards_activities .icon_heart {
-    height: 40px;
-    width: 40px;
-}
-.title_activities h1 {
-    color: rgba(145, 37, 208, 0.8);
-    text-align: center;
-    margin: 20px;
-}
+
 /* endss page activities*/
 /*starts section accommodation*/
 .cards_accommodation h1 {
@@ -290,32 +275,32 @@ header {
             height: 100vh;
             width: auto;
         }
-    }
-    .header_title h2 span {
-        color: #383a39;
-    }
-   .main_contain {
-        flex-direction: column;   
-   }
+        .header_title h2 span {
+            color: #383a39;
+        }
+        .main_contain {
+            flex-direction: column;   
+        }
         .main_contain h1 {
             font-size: 24px;
         }
-   .template_area_footer {
-    grid-template-columns: repeat(2,1fr);
-    grid-template-rows: repeat(3,1fr);
-    grid-template-areas: 
-    "logo redes"
-    "links_4 links_4"
-    "copi copi ";
-   }
-   .links_1,.links_2,.links_3 {
-    display: none;
-   }
-   /*Contact*/
-   .container {
-    width: 70%;
-   }
-   /*Contact*/
+        .template_area_footer {
+            grid-template-columns: repeat(2,1fr);
+            grid-template-rows: repeat(3,1fr);
+            grid-template-areas: 
+            "logo redes"
+            "links_4 links_4"
+            "copi copi ";
+        }
+        .links_1,.links_2,.links_3 {
+            display: none;
+        }
+        /*Contact*/
+        .container {
+            width: 70%;
+        }
+        /*Contact*/
+    }
 @media (width > 450px) {
     .ww-50 {
         width: 100%;
