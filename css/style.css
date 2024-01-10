@@ -214,49 +214,22 @@ input[type="checkbox"].color:checked {
 }
 /*ends section accommodation*/
 /*starts section contact*/
-.container {
-    width: 30%;
-    padding: 40px;
-    display: flex;
-    flex-direction: column;
-    margin-top: 50px;
-    border-radius: 20px;
+.form-floating {
+    margin: 10px auto;
+}
+.form-signin {
+    max-width: 330px;
+    padding: 1rem;
+}
+.bg-input {
+    background-image: url(../img/aterdecerruta.webp);
+    background-size: cover;
+    padding: 10px;
+} 
+.bg-form {
     background: transparent;
     backdrop-filter: blur(14px);
-    position: absolute;
-    text-transform: uppercase;
 }
-    .input_container input {
-        width: 80%;
-        border-radius:10px ;
-        margin: 10px;
-        padding: 5px;
-        background-color: rgba(255, 255, 255, 0.3);
-    }
-    .input_container textarea {
-        width: 80%;
-        border-radius: 10px;
-        margin: 10px;
-        padding: 5px;
-        background-color: rgba(255, 255, 255, 0.3);
-    }
-.back_ground {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-    .back_ground label {
-        color: white;
-    }
-    .back_ground img {
-        width: 100%;
-    }
-    .back_ground h1 {
-        margin-bottom: 20px;
-        font-size: 24px;
-        font-weight: bold;
-        color: white;
-    }
 /*ends section contact*/
 /*media queries*/
 @media (width <= 500px) {
