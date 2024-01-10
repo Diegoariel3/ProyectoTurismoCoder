@@ -5,76 +5,246 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Alojamiento</title>
     <!--favicon-->
-    <link rel="shortcut icon" href="../img/logo.png" type="image/x-icon">
+    <!--css bs-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <!--icon bs-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
     <link rel="stylesheet" href="../css/style.css">
 </head>
 
 <body>
     <!--starts nav-->
-    <nav class="primary_nav">
-        <a href="../index.html"><img src="../img/logo.png" alt="Logo de unas montañas y arboles"></a>
-        <ul>
-            <li><a href="../pages/lugares.html">Lugares</a></li>
-            <li><a href="../pages/actividades.html">Actividades</a></li>
-            <li><a href="#">Alojamiento</a></li>
-            <li><a href="../pages/contacto.html">Contacto</a></li>
-        </ul>
-        <img src="../img/search.png" alt="Icono de una lupa" class="search">
-    </nav>
+    <nav class="navbar navbar-expand-lg nb-bg primary_nav">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="../index.html"><img src="../img/logocopia.png" alt="Logo de unas montañas y un rio"></a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="../pages/lugares.html">Lugares</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="../pages/actividades.html">Actividades</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" href="#">Alojamiento</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="../pages/contacto.html">Contacto</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
     <!--ends nav-->
     <!--starts section accommodation-->
-    <main>
-        <section class="cards_accommodation">
-            <h1>Lorem ipsum dolor sit amet consectetur adipisicing elit.</h1>
-            <article>
-                <img src="../img/foto_rio.jpg" alt="Cause de un rio entre arboles">
-                <h2>Descripción</h2>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe quas iure sit vero consectetur velit tempore repellendus minus, laborum, inventore facere. Voluptatum voluptas, fuga impedit recusandae veniam veritatis maxime repudiandae.</p>
-                <h3>$10.000</h3>
-                <img src="../img/heart.png" alt="Icono de Corazón" class="icon_heart">
-                <input type="submit" value="Mas info">
-            </article>
-            <article>
-                <img src="../img/foto_rio.jpg" alt="Cause de un rio entre arboles">
-                <h2>Descripción</h2>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe quas iure sit vero consectetur velit tempore repellendus minus, laborum, inventore facere. Voluptatum voluptas, fuga impedit recusandae veniam veritatis maxime repudiandae.</p>
-                <h3>$10.000</h3>
-                <img src="../img/heart.png" alt="Icono de Corazón" class="icon_heart">
-                <input type="submit" value="Mas info">
-            </article>
-            <article>
-                <img src="../img/foto_rio.jpg" alt="Cause de un rio entre arboles">
-                <h2>Descripción</h2>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe quas iure sit vero consectetur velit tempore repellendus minus, laborum, inventore facere. Voluptatum voluptas, fuga impedit recusandae veniam veritatis maxime repudiandae.</p>
-                <h3>$10.000</h3>
-                <img src="../img/heart.png" alt="Icono de Corazón" class="icon_heart">
-                <input type="submit" value="Mas info">
-            </article>
-            <article>
-                <img src="../img/foto_rio.jpg" alt="Cause de un rio entre arboles">
-                <h2>Descripción</h2>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe quas iure sit vero consectetur velit tempore repellendus minus, laborum, inventore facere. Voluptatum voluptas, fuga impedit recusandae veniam veritatis maxime repudiandae.</p>
-                <h3>$10.000</h3>
-                <img src="../img/heart.png" alt="Icono de Corazón" class="icon_heart">
-                <input type="submit" value="Mas info">
-            </article>
-            <article>
-                <img src="../img/foto_rio.jpg" alt="Cause de un rio entre arboles">
-                <h2>Descripción</h2>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe quas iure sit vero consectetur velit tempore repellendus minus, laborum, inventore facere. Voluptatum voluptas, fuga impedit recusandae veniam veritatis maxime repudiandae.</p>
-                <h3>$10.000</h3>
-                <img src="../img/heart.png" alt="Icono de Corazón" class="icon_heart">
-                <input type="submit" value="Mas info">
-            </article>
-            <article>
-                <img src="../img/foto_rio.jpg" alt="Cause de un rio entre arboles">
-                <h2>Descripción</h2>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe quas iure sit vero consectetur velit tempore repellendus minus, laborum, inventore facere. Voluptatum voluptas, fuga impedit recusandae veniam veritatis maxime repudiandae.</p>
-                <h3>$10.000</h3>
-                <img src="../img/heart.png" alt="Icono de Corazón" class="icon_heart">
-                <input type="submit" value="Mas info">
-            </article>
-        </section>
+    <h1 class="title-places">Encontrá tu alojamiento Fácil y Rápido</h1>
+    <main class="container-xl d-flex flex-row-reverse">
+      <!--start cards-->
+      <section>
+        <div class="card mb-3">
+          <div class="row g-0">
+            <div class="col-md-4">
+              <img src="../img/refugio1.jpg" class="img-fluid rounded-start" alt="...">
+            </div>
+            <div class="col-md-8">
+              <div class="card-body m-0">
+                <h2 class="card-title">Refugio del Lago Escondido</h2>
+                <p class="card-text">Este refugio, a orillas de un lago alpino, ofrece habitaciones con balcones privados y vistas al volcán. Es un remanso de tranquilidad en medio de un entorno volcánico impresionante.</p>
+                <p class="card-text"><small class="text-body-secondary">$90.000</small></p>
+                <div class="d-flex justify-content-between flex-md-row-reverse">
+                <a href="#" class="btn bg-custom align-self-end">Reservar</a>
+                <a href="" class="ico btn-outline-success align-self-start"><img src="./heart.png" alt=""></a>
+              </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="card mb-3">
+          <div class="row g-0">
+            <div class="col-md-4">
+              <img src="../img/refugio2.jpg" class="img-fluid rounded-start" alt="...">
+            </div>
+            <div class="col-md-8">
+              <div class="card-body m-0">
+                <h2 class="card-title">Alojamiento Araucaria</h2>
+                <p class="card-text">Con vistas a los bosques de araucarias, este alojamiento ofrece cabañas acogedoras y acceso directo a rutas de esquí de travesía y senderos de montaña.</p>
+                <p class="card-text"><small class="text-body-secondary">$60.000</small></p>
+                <div class="d-flex justify-content-between flex-md-row-reverse">
+                <a href="#" class="btn bg-custom align-self-end">Reservar</a>
+                <a href="" class="ico btn-outline-success align-self-start"><img src="./heart.png" alt=""></a>
+              </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="card mb-3">
+          <div class="row g-0">
+            <div class="col-md-4">
+              <img src="../img/refugio4.jpg" class="img-fluid rounded-start" alt="...">
+            </div>
+            <div class="col-md-8">
+              <div class="card-body m-0">
+                <h2 class="card-title">Posada de las Estrellas</h2>
+                <p class="card-text">Esta posada, ubicada en medio de viñedos y montañas, ofrece habitaciones con techos de vidrio para observación astronómica. Una experiencia única para los amantes de las estrellas.</p>
+                <p class="card-text"><small class="text-body-secondary">$80.000</small></p>
+                <div class="d-flex justify-content-between flex-md-row-reverse">
+                <a href="#" class="btn bg-custom align-self-end">Reservar</a>
+                <a href="" class="ico btn-outline-success align-self-start"><img src="./heart.png" alt=""></a>
+              </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="card mb-3">
+          <div class="row g-0">
+            <div class="col-md-4">
+              <img src="../img/refugio3.jpg" class="img-fluid rounded-start" alt="...">
+            </div>
+            <div class="col-md-8">
+              <div class="card-body m-0">
+                <h2 class="card-title">Eco-Cabañas del Bosque Encantado</h2>
+                <p class="card-text">Estas cabañas sostenibles, rodeadas de bosques ancestrales, ofrecen una experiencia acogedora con chimeneas de piedra y ventanas con vistas a lagos cristalinos. Perfectas para aquellos que buscan tranquilidad en medio de la naturaleza.</p>
+                <p class="card-text"><small class="text-body-secondary">$90.000</small></p>
+                <div class="d-flex justify-content-between flex-md-row-reverse">
+                <a href="#" class="btn bg-custom align-self-end">Reservar</a>
+                <a href="" class="ico btn-outline-success align-self-start"><img src="./heart.png" alt=""></a>
+              </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="card mb-3">
+          <div class="row g-0">
+            <div class="col-md-4">
+              <img src="../img/refigio5.jpg" class="img-fluid rounded-start" alt="...">
+            </div>
+            <div class="col-md-8">
+              <div class="card-body m-0">
+                <h2 class="card-title">Refugio del Río Tranquilo </h2>
+                <p class="card-text">Ubicado en un valle sereno, este refugio ofrece cabañas junto al río y actividades de observación de aves. Ideal para aquellos que buscan paz y contacto directo con la naturaleza.</p>
+                <p class="card-text"><small class="text-body-secondary">$70.000</small></p>
+                <div class="d-flex justify-content-between flex-md-row-reverse">
+                <a href="#" class="btn bg-custom align-self-end">Reservar</a>
+                <a href="" class="ico btn-outline-success align-self-start"><img src="./heart.png" alt=""></a>
+              </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!--ends cards-->
+      <!--start checkbox-->
+      <section>
+        <div class="d-flex flex-column p-4 gap-1 py-md-5 align-items-center justify-content-start">
+          <div class="list-group">
+            <label class="list-group-item d-flex gap-2">
+
+              <span class="strong">
+                Tipo de alojamiento
+              </span>
+            </label>
+            <label class="list-group-item d-flex gap-2">
+              <input class="form-check-input flex-shrink-0 color" type="checkbox" value="" checked>
+              <span>
+                Cabañas
+              </span>
+            </label>
+            <label class="list-group-item d-flex gap-2">
+              <input class="form-check-input flex-shrink-0 color" type="checkbox" value="">
+              <span>
+                Departamentos
+              </span>
+            </label>
+            <label class="list-group-item d-flex gap-2">
+              <input class="form-check-input flex-shrink-0 color" type="checkbox" value="">
+              <span>
+                Hoteles
+              </span>
+            </label>
+          </div>
+
+          
+          <div class="list-group">
+            <label class="list-group-item d-flex gap-2">
+
+              <span class="strong">
+                Instalaciones
+              </span>
+            </label>
+            <label class="list-group-item d-flex gap-2">
+              <input class="form-check-input flex-shrink-0 color" type="checkbox" value="" checked>
+              <span>
+                Estacionamiento
+              </span>
+            </label>
+            <label class="list-group-item d-flex gap-2">
+              <input class="form-check-input flex-shrink-0 color" type="checkbox" value="">
+              <span>
+                Wifi gratis
+              </span>
+            </label>
+            <label class="list-group-item d-flex gap-2">
+              <input class="form-check-input flex-shrink-0 color" type="checkbox" value="">
+              <span>
+                Pileta
+              </span>
+            </label>
+            <label class="list-group-item d-flex gap-2">
+              <input class="form-check-input flex-shrink-0 color" type="checkbox" value="">
+              <span>
+                Gimnasio
+              </span>
+            </label>
+            <label class="list-group-item d-flex gap-2">
+              <input class="form-check-input flex-shrink-0 color" type="checkbox" value="">
+              <span>
+                Acepta mascotas
+              </span>
+            </label>
+          </div>
+
+            <div class="list-group">
+              <label class="list-group-item d-flex gap-2">
+  
+                <span class="strong">
+                  Clasificación del alojamiento
+                </span>
+              </label>
+              <label class="list-group-item d-flex gap-2">
+                <input class="form-check-input flex-shrink-0 color" type="checkbox" value="" checked>
+                <span>
+                  5 estrellas
+                </span>
+              </label>
+              <label class="list-group-item d-flex gap-2">
+                <input class="form-check-input flex-shrink-0 color" type="checkbox" value="">
+                <span>
+                  4 estrellas
+                </span>
+              </label>
+              <label class="list-group-item d-flex gap-2">
+                <input class="form-check-input flex-shrink-0 color" type="checkbox" value="">
+                <span>
+                  3 estrellas
+                </span>
+              </label>
+              <label class="list-group-item d-flex gap-2">
+                <input class="form-check-input flex-shrink-0 color" type="checkbox" value="">
+                <span>
+                  Otros
+                </span>
+              </label>
+            </div>
+        </div>
+      </section>
+      <!--ends checkbox-->   
     </main>
     <!--starts footer with grid-->
     <footer>
@@ -134,5 +304,6 @@
         </div>
     </footer>
     <!--ends footer with grid-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
 </body>
 </html>
