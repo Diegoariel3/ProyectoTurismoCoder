@@ -242,6 +242,9 @@ input[type="checkbox"].color:checked {
             width: 100%;
             object-fit: cover;
         }
+        .header_title h2 {
+            top: 300px;
+        }
         .header_title h2 span {
             color: #383a39;
         }
@@ -249,7 +252,7 @@ input[type="checkbox"].color:checked {
             flex-direction: column;   
         }
         .main_contain h1 {
-            font-size: 24px;
+            font-size: 34px;
         }
         .template_area_footer {
             grid-template-columns: repeat(2,1fr);
