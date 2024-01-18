@@ -33,7 +33,9 @@ header {
     top: 150px;
     transform: translateX(-50%); /*Solucion buscada en internet para centrar texto*/
 }
-   
+.navbar-toggler {
+    border: none;
+ }  
 .secondary_nav {
     display: flex;
     justify-content: space-around;
@@ -192,6 +194,11 @@ header {
 .bg-custom {
     background-color: rgb(103, 114, 157); 
     color: rgb(254, 217, 237);
+}
+.bg-custom:hover {
+    background-color: rgb(254, 217, 237);
+    border: 1px solid rgb(103, 114, 157);
+    color: rgb(103, 114, 157);
 }
 /* ends page places*/
 /* starts page activities*/
