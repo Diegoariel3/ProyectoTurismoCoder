@@ -133,7 +133,7 @@ header {
             color: rgb(254, 217, 237);
         }
         footer ul :hover {      /*prueba hover*/
-            color: rgb(187, 156, 192)
+            color: rgb(187, 156, 192);
         }
 .template_area_footer {
     display: grid;
