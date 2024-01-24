@@ -1,11 +1,13 @@
-footer ul {
-    list-style: none;
-    &:hover {
-        color: rgb(187, 156, 192);
+footer {
+    ul {
+        list-style: none;
     }
     a {
         text-decoration: none;
         color: $secondaryColor;
+        &:hover {
+            color: map-get($map: $paleta, $key: 'uno');
+        }
     }
 }
 .template_area_footer {

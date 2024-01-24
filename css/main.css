@@ -10,6 +10,10 @@ p {
   font-size: 1em;
 }
 
+.bg-violet {
+  background-color: #4B3869;
+}
+
 .primary_nav img {
   height: 40px;
 }
@@ -45,6 +49,7 @@ header img {
 
 .secondary_nav {
   display: flex;
+  flex-direction: row;
   justify-content: space-around;
   align-items: center;
   height: 100px;
@@ -63,6 +68,7 @@ header img {
 .main_contain {
   display: flex;
   flex-direction: row-reverse;
+  justify-content: space-around;
   align-items: center;
   width: 100%;
 }
@@ -200,12 +206,12 @@ input[type=checkbox].color:checked {
 footer ul {
   list-style: none;
 }
-footer ul:hover {
-  color: rgb(187, 156, 192);
-}
-footer ul a {
+footer a {
   text-decoration: none;
   color: rgb(254, 217, 237);
+}
+footer a:hover {
+  color: #4B3869;
 }
 
 .template_area_footer {
