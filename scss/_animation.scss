@@ -1,0 +1,78 @@
+.scale:hover {
+    transform: scale(1.2);
+    transition: all 0.5s;
+    cursor: pointer;
+}
+@keyframes animatedText {
+    0% {color: aqua;}
+    25% {transform: scale(2); rotate: 20deg;}
+    50% {color: azure;}
+    75% {color: cornflowerblue;}
+    100% {color: fuchsia;}
+}
+.ani {
+    animation: animatedText;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+}
+//animacion texto
+@-webkit-keyframes tracking-in-expand {
+    0% {
+      letter-spacing: -0.5em;
+      opacity: 0;
+    }
+    40% {
+      opacity: 0.6;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+  @keyframes tracking-in-expand {
+    0% {
+      letter-spacing: -0.5em;
+      opacity: 0;
+    }
+    40% {
+      opacity: 0.6;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+  
+  
+  .tracking-in-expand {
+	-webkit-animation: tracking-in-expand 0.7s cubic-bezier(0.215, 0.610, 0.355, 1.000) both;
+	        animation: tracking-in-expand 0.7s cubic-bezier(0.215, 0.610, 0.355, 1.000) both;
+}
+//animation shadow cards
+@keyframes shadow-drop-lr {
+    0% {
+      box-shadow: 0 0 0 0 rgba(0, 0, 0, 0), 0 0 0 0 rgba(0, 0, 0, 0);
+    }
+    100% {
+      box-shadow: -12px 0 30px -12px rgba(0, 0, 0, 0.35), 12px 0 20px -12px rgba(0, 0, 0, 0.35);
+    }
+  }
+  
+  .shadow-drop-lr:hover {
+	animation: shadow-drop-lr 0.6s both;
+}
+//prueba
+@keyframes kenburns-bottom-left {
+    0% {
+      transform: scale(1) translate(0, 0);
+      transform-origin: 16% 84%;
+    }
+    100% {
+      transform: scale(1.25) translate(-20px, 15px);
+      transform-origin: left bottom;
+    }
+  }
+  .kenburns-bottom-left:hover {
+	animation: kenburns-bottom-left 5s ease-out both;
+}
+.card {
+    overflow: hidden;
+}

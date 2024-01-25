@@ -10,6 +10,95 @@ p {
   font-size: 1em;
 }
 
+.scale:hover {
+  transform: scale(1.2);
+  transition: all 0.5s;
+  cursor: pointer;
+}
+
+@keyframes animatedText {
+  0% {
+    color: aqua;
+  }
+  25% {
+    transform: scale(2);
+    rotate: 20deg;
+  }
+  50% {
+    color: azure;
+  }
+  75% {
+    color: cornflowerblue;
+  }
+  100% {
+    color: fuchsia;
+  }
+}
+.ani {
+  animation: animatedText;
+  animation-duration: 10s;
+  animation-iteration-count: infinite;
+}
+
+@-webkit-keyframes tracking-in-expand {
+  0% {
+    letter-spacing: -0.5em;
+    opacity: 0;
+  }
+  40% {
+    opacity: 0.6;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes tracking-in-expand {
+  0% {
+    letter-spacing: -0.5em;
+    opacity: 0;
+  }
+  40% {
+    opacity: 0.6;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+.tracking-in-expand {
+  -webkit-animation: tracking-in-expand 0.7s cubic-bezier(0.215, 0.61, 0.355, 1) both;
+  animation: tracking-in-expand 0.7s cubic-bezier(0.215, 0.61, 0.355, 1) both;
+}
+
+@keyframes shadow-drop-lr {
+  0% {
+    box-shadow: 0 0 0 0 rgba(0, 0, 0, 0), 0 0 0 0 rgba(0, 0, 0, 0);
+  }
+  100% {
+    box-shadow: -12px 0 30px -12px rgba(0, 0, 0, 0.35), 12px 0 20px -12px rgba(0, 0, 0, 0.35);
+  }
+}
+.shadow-drop-lr:hover {
+  animation: shadow-drop-lr 0.6s both;
+}
+
+@keyframes kenburns-bottom-left {
+  0% {
+    transform: scale(1) translate(0, 0);
+    transform-origin: 16% 84%;
+  }
+  100% {
+    transform: scale(1.25) translate(-20px, 15px);
+    transform-origin: left bottom;
+  }
+}
+.kenburns-bottom-left:hover {
+  animation: kenburns-bottom-left 5s ease-out both;
+}
+
+.card {
+  overflow: hidden;
+}
+
 .bg-violet {
   background-color: #4B3869;
 }
@@ -23,6 +112,7 @@ p {
 
 header {
   width: 100%;
+  overflow: hidden;
 }
 header h2 {
   color: rgb(103, 114, 157);
@@ -37,7 +127,7 @@ header img {
 .header_title h2 {
   color: rgb(253, 253, 253);
   position: absolute;
-  left: 50%;
+  left: 35%;
   text-transform: uppercase;
   top: 150px;
   transform: translateX(-50%);
@@ -52,7 +142,7 @@ header img {
   flex-direction: row;
   justify-content: space-around;
   align-items: center;
-  height: 100px;
+  height: 5em;
   width: 100%;
   background-color: rgb(103, 114, 157);
   margin-top: -3px; /*Solucion temporaria*/

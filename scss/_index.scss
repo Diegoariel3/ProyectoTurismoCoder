@@ -8,6 +8,7 @@
 }
 header {
     width: 100%;
+    overflow: hidden;
     h2{
         color: $primaryColor;
         font-size: $xxl;
@@ -22,7 +23,7 @@ header {
     h2 {
         color: $white;
         position: absolute;
-        left: 50%;
+        left: 35%;
         text-transform: uppercase;
         top: 150px;
         transform: translateX(-50%);
@@ -33,7 +34,7 @@ header {
 }
 .secondary_nav {
     @include flex(row,space-around,center);
-    height: 100px;
+    height: 5em;
     width: 100%;
     background-color: $primaryColor;
     margin-top: -3px;    /*Solucion temporaria*/  
