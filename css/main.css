@@ -124,13 +124,22 @@ header img {
   width: 100%;
 }
 
+.header_title {
+  background-image: url(../img/portada.webp);
+  background-position: right top;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  height: 100vh;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
 .header_title h2 {
   color: rgb(253, 253, 253);
-  position: absolute;
-  left: 35%;
   text-transform: uppercase;
-  top: 150px;
-  transform: translateX(-50%);
+  margin-bottom: 100px;
 }
 
 .navbar-toggler {
@@ -164,7 +173,7 @@ header img {
 }
 .main_contain h1 {
   color: rgb(103, 114, 157);
-  font-size: 3em;
+  font-size: 2em;
   text-align: center;
   margin: 20px;
 }

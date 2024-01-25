@@ -20,13 +20,17 @@ header {
     }
 }
 .header_title {
+    background-image: url(../img/portada.webp);
+    background-position: right top;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    height: 100vh;
+    @include flex(row,center,center);
     h2 {
         color: $white;
-        position: absolute;
-        left: 35%;
         text-transform: uppercase;
-        top: 150px;
-        transform: translateX(-50%);
+        margin-bottom: 100px;
     }
 }
 .navbar-toggler {
@@ -51,7 +55,7 @@ header {
     width: 100%;
     h1 {
         color: $primaryColor;
-        font-size: $xxl;
+        font-size: $xl;
         text-align: center;
         margin: 20px;
     }
