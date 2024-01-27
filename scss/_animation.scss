@@ -3,19 +3,27 @@
     transition: all 0.5s;
     cursor: pointer;
 }
-@keyframes animatedText {
-    0% {color: aqua;}
-    25% {transform: scale(2); rotate: 20deg;}
-    50% {color: azure;}
-    75% {color: cornflowerblue;}
-    100% {color: fuchsia;}
+//animación corazón
+.bi-heart {
+  transition-duration: 1s;
+  &:hover {
+    scale: 2;
+    color: red;
+    text-shadow: 0 0 15px red;
+    transition-timing-function: ease-in-out;
+  }
 }
-.ani {
-    animation: animatedText;
-    animation-duration: 10s;
-    animation-iteration-count: infinite;
+//animación logo
+.navbar-brand img {
+  transition-duration: 1.2s;
+  &:hover {
+    filter: contrast(.5);
+    transform: scale(1.2);
+    cursor: pointer;
+  }
 }
-//animacion texto
+
+//animación texto
 @-webkit-keyframes tracking-in-expand {
     0% {
       letter-spacing: -0.5em;
@@ -43,22 +51,12 @@
   
   
   .tracking-in-expand {
-	-webkit-animation: tracking-in-expand 0.7s cubic-bezier(0.215, 0.610, 0.355, 1.000) both;
-	        animation: tracking-in-expand 0.7s cubic-bezier(0.215, 0.610, 0.355, 1.000) both;
+	-webkit-animation: tracking-in-expand 2.7s cubic-bezier(0.215, 0.610, 0.355, 1.000) both;
+	        animation: tracking-in-expand 2.7s cubic-bezier(0.215, 0.610, 0.355, 1.000) both;
 }
 //animation shadow cards
-@keyframes shadow-drop-lr {
-    0% {
-      box-shadow: 0 0 0 0 rgba(0, 0, 0, 0), 0 0 0 0 rgba(0, 0, 0, 0);
-    }
-    100% {
-      box-shadow: -12px 0 30px -12px rgba(0, 0, 0, 0.35), 12px 0 20px -12px rgba(0, 0, 0, 0.35);
-    }
-  }
-  
-  .shadow-drop-lr:hover {
-	animation: shadow-drop-lr 0.6s both;
-}
+
+
 //prueba
 @keyframes kenburns-bottom-left {
     0% {

@@ -11,7 +11,8 @@
     <link rel="shortcut icon" href="./img/logo.png" type="image/x-icon">
     <!--css bs-->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
-    
+    <!--css aos-->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="./css/main.css">
 </head>
 
@@ -47,7 +48,6 @@
         <div class="header_title">
             <h2 class="tracking-in-expand">Nuestras Montañas</h2>
         </div>
-        <!-- <img src="./img/portada.webp" alt="Montaña Nevada Bajo Cielo Despejado" class="kenburns-bottom-left"> -->
     </header>
     <!--ends presentation-->
     <!--starts secondary nav-->
@@ -60,7 +60,7 @@
     <!--ends secondary nav-->
     <!--starts intro-->
     <main>
-        <section class="main_contain">
+        <section class="main_contain ">
             <div class="section_text ww-50">
                 <h1>"Descubre la Majestuosidad Natural de las Montañas de Argentina"</h1>
                 <p>En el corazón de Argentina yace un tesoro natural: sus imponentes montañas. Desde los picos nevados de la cordillera de los Andes hasta las majestuosas formaciones de la Sierra de las Quijadas, el país ofrece un espectáculo de paisajes montañosos que cautivan a cada visitante. Las montañas de Argentina no solo son una obra maestra de la naturaleza, sino también un paraíso para los aventureros y amantes de la naturaleza. En estas alturas, se encuentran oportunidades infinitas para la exploración: desde emocionantes rutas de senderismo y escalada hasta la serenidad de lagos glaciares que reflejan la grandeza de las cumbres.</p>
@@ -68,20 +68,30 @@
                 <p>Cada región montañosa tiene su propia historia grabada en sus relieves, desde los valles verdes hasta los picos escarpados que desafían el cielo. La diversidad geográfica ofrece un escenario perfecto para actividades al aire libre durante todo el año: esquí en invierno, senderismo en primavera, escalada en verano y un estallido de colores en otoño. La belleza natural de estas montañas argentinas es un llamado irresistible para aquellos que buscan la tranquilidad de paisajes intocados y la emoción de la aventura en su forma más pura. Ven y sumérgete en la grandeza de las montañas de Argentina, donde la naturaleza te recibe con los brazos abiertos.</p>
 
             </div>
-            <div class="section_image ww-50 scale">
+            <div class="section_image ww-50" data-aos="fade-right"
+            data-aos-offset="300"
+            data-aos-easing="ease-in-sine">
                 <img src="./img/pexels-pixabay-417173.webp" alt="Montaña Gris Y Marrón">
             </div>
         </section>
         <section class="main_contain_image">
-            <img src="./img/montaña5.webp" alt="Montaña de noche" class="montaña1">
+            <img src="./img/montaña5.webp" alt="Montaña de noche" class="montaña1" data-aos="fade-up"
+            data-aos-anchor-placement="bottom-bottom">
             <img src="./img/montaña7.webp" alt="Vista aerea de lago con montañas nevadas"
-            class="montaña2">
-            <img src="./img/montaña6.webp" alt="Montañas multicolores"  class="montaña3">
-            <img src="./img/montaña8.webp" alt="Paisaje nevado con montañas de fondo"  class="montaña4">
-            <img src="./img/montaña1.jpg" alt="Paisaje montañoso un día nublado"  class="montaña5">
-            <img src="./img/montaña2.jpg" alt="Lago al pié de la montaña de noche"  class="montaña6">
-            <img src="./img/montaña3.webp" alt="Vista aerea de cuidad con montaña multicolores"  class="montaña7">
-            <img src="./img/montaña4.jpg" alt="Bosque con montañas de fondo"  class="montaña8">
+            class="montaña2" data-aos="fade-up"
+            data-aos-anchor-placement="bottom-bottom">
+            <img src="./img/montaña6.webp" alt="Montañas multicolores"  class="montaña3" data-aos="fade-up"
+            data-aos-anchor-placement="bottom-bottom">
+            <img src="./img/montaña8.webp" alt="Paisaje nevado con montañas de fondo"  class="montaña4" data-aos="fade-up"
+            data-aos-anchor-placement="bottom-bottom">
+            <img src="./img/montaña1.jpg" alt="Paisaje montañoso un día nublado"  class="montaña5" data-aos="fade-up"
+            data-aos-anchor-placement="bottom-bottom">
+            <img src="./img/montaña2.jpg" alt="Lago al pié de la montaña de noche"  class="montaña6" data-aos="fade-up"
+            data-aos-anchor-placement="bottom-bottom">
+            <img src="./img/montaña3.webp" alt="Vista aerea de cuidad con montaña multicolores"  class="montaña7" data-aos="fade-up"
+            data-aos-anchor-placement="bottom-bottom">
+            <img src="./img/montaña4.jpg" alt="Bosque con montañas de fondo"  class="montaña8" data-aos="fade-up"
+            data-aos-anchor-placement="bottom-bottom">
         </section>
     </main>
     <!--ends intro-->
@@ -158,5 +168,10 @@
         }
       });
     </script>
+    <!--script aos-->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+         AOS.init();
+       </script>
 </body>
 </html>

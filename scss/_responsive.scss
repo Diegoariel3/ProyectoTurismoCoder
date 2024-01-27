@@ -17,8 +17,11 @@
     .main_contain {
         flex-direction: column;
         h1 {
-            font-size: $xxl;
+            font-size: $xl;
         }   
+    }
+    .m-custom {
+        padding: 32px;
     }
     .template_area_footer {
         grid-template-columns: repeat(2,1fr);
