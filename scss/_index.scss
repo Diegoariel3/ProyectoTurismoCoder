@@ -4,6 +4,29 @@
     }
     a {
         font-size: $lg;
+        position: relative;
+        overflow: hidden;
+        display: inline-block;
+        text-decoration: none;
+        color: #333;
+        &:after {
+            content: "";
+            position: absolute;
+            bottom: 0;
+            left: -100%;
+            width: 100%;
+            height: 3px;
+            background: $white;
+            transition: left .8s;
+            }
+            &:hover:after  {
+                left: 0; 
+            }
+    }
+}
+.navbar-brand {
+    &:after {
+        display: none;
     }
 }
 header {
