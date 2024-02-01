@@ -2,6 +2,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700;900&display=swap");
 * {
   font-family: "Playfair Display", serif;
+  margin: 0;
 }
 
 p {
@@ -343,6 +344,182 @@ footer a:hover {
   grid-area: copi;
 }
 
+.error-404 {
+  background-image: url(../img/yeti.webp);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+
+.error-404 h2 {
+  color: rgb(253, 253, 253);
+  font-size: 2em;
+  font-weight: 700;
+  text-transform: uppercase;
+  margin: 2em;
+  background: transparent;
+  backdrop-filter: blur(14px);
+  border-radius: 10px;
+}
+
+.error-404 p {
+  color: black;
+  margin: 2em;
+  padding: 1.6em;
+  background: rgba(255, 255, 255, 0.48);
+  max-width: 800px;
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  backdrop-filter: blur(4px);
+  -webkit-backdrop-filter: blur(4px);
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+}
+
+.btn-5,
+.btn-5 *,
+.btn-5 :after,
+.btn-5 :before,
+.btn-5:after,
+.btn-5:before {
+  border: 0 solid;
+  box-sizing: border-box;
+}
+
+.btn-5 {
+  -webkit-tap-highlight-color: transparent;
+  -webkit-appearance: button;
+  background-color: #000;
+  background-image: none;
+  color: #fff;
+  cursor: pointer;
+  font-size: 100%;
+  font-weight: 900;
+  line-height: 1.5;
+  margin: 0;
+  -webkit-mask-image: -webkit-radial-gradient(#000, #fff);
+  padding: 0;
+  text-transform: uppercase;
+  margin: 2em;
+}
+
+.btn-5:disabled {
+  cursor: default;
+}
+
+.btn-5:-moz-focusring {
+  outline: auto;
+}
+
+.btn-5 svg {
+  display: block;
+  vertical-align: middle;
+}
+
+.btn-5 [hidden] {
+  display: none;
+}
+
+.btn-5 {
+  border-radius: 99rem;
+  border-width: 2px;
+  overflow: hidden;
+  padding: 0.8rem 3rem;
+  position: relative;
+}
+
+.btn-5 span {
+  mix-blend-mode: difference;
+}
+
+.btn-5:before {
+  --tilt: 1.2rem;
+  background: #fff;
+  -webkit-clip-path: polygon(0 0, calc(100% - var(--tilt)) 0, 100% 50%, calc(100% - var(--tilt)) 100%, 0 100%);
+  clip-path: polygon(0 0, calc(100% - var(--tilt)) 0, 100% 50%, calc(100% - var(--tilt)) 100%, 0 100%);
+  content: "";
+  display: block;
+  height: 100%;
+  left: calc(-100% - var(--tilt));
+  position: absolute;
+  top: 0;
+  transform: translateX(var(--progress, 0));
+  transition: transform 0.2s ease;
+  width: calc(100% + var(--tilt));
+}
+
+.btn-5:hover:before {
+  --progress: 100%;
+}
+
+.container {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  width: 100%;
+  height: 100vh;
+  margin-right: 8em;
+}
+
+.chevron {
+  position: absolute;
+  width: 2.1rem;
+  height: 0.48rem;
+  opacity: 0;
+  transform: scale(0.3);
+  animation: move-chevron 3s ease-out infinite;
+}
+
+.chevron:first-child {
+  animation: move-chevron 3s ease-out 1s infinite;
+}
+
+.chevron:nth-child(2) {
+  animation: move-chevron 3s ease-out 2s infinite;
+}
+
+.chevron:before,
+.chevron:after {
+  content: "";
+  position: absolute;
+  top: 0;
+  height: 100%;
+  width: 50%;
+  background: #2c3e50;
+}
+
+.chevron:before {
+  left: 0;
+  transform: skewY(30deg);
+}
+
+.chevron:after {
+  right: 0;
+  width: 50%;
+  transform: skewY(-30deg);
+}
+
+@keyframes move-chevron {
+  25% {
+    opacity: 1;
+  }
+  33.3% {
+    opacity: 1;
+    transform: translateY(2.28rem);
+  }
+  66.6% {
+    opacity: 1;
+    transform: translateY(3.12rem);
+  }
+  100% {
+    opacity: 0;
+    transform: translateY(4.8rem) scale(0.5);
+  }
+}
 @media (width <= 500px) {
   header {
     display: flex;
@@ -378,6 +555,12 @@ footer a:hover {
   }
   .container {
     width: 70%;
+  }
+  .error-404 h2 {
+    font-weight: 400;
+  }
+  .container .chevron {
+    display: none;
   }
 }
 @media (width > 450px) {

@@ -37,6 +37,12 @@
     .container {
         width: 70%;
     }
+    .error-404 h2 {
+        font-weight: $regular;
+    }
+    .container .chevron {
+        display: none;
+    }
 }
 @media (width > 450px) {
     .ww-50 {
