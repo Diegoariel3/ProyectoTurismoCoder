@@ -37,12 +37,18 @@
     .container {
         width: 70%;
     }
-    .error-404 h2 {
-        font-weight: $regular;
+    .error-404 {
+        background: url(../img/yetimobile.webp);
+        background-size: cover;
+        h2 {
+            font-weight: $regular;
+            margin: 1em;
+        }
     }
     .container .chevron {
         display: none;
     }
+    
 }
 @media (width > 450px) {
     .ww-50 {

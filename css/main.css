@@ -556,8 +556,13 @@ footer a:hover {
   .container {
     width: 70%;
   }
+  .error-404 {
+    background: url(../img/yetimobile.webp);
+    background-size: cover;
+  }
   .error-404 h2 {
     font-weight: 400;
+    margin: 1em;
   }
   .container .chevron {
     display: none;
