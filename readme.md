@@ -13,7 +13,7 @@ Pie de página: Un pie de página con enlaces a redes sociales, información de 
 
 ## Actividades
 ## Alojamiento
-## Coontacto
+## Contacto
 ## Lugares
 
 
@@ -25,4 +25,4 @@ Contribución Si deseas contribuir al desarrollo de este sitio web, por favor ha
 
 Licencia Este proyecto está licenciado bajo la Licencia MIT - ver el archivo LICENSE para más detalles.
 
-Contacto Si tienes alguna pregunta o comentario sobre este proyecto, por favor contáctame en [diegoariel3@gmail.com] .
+Contacto Si tienes alguna pregunta o comentario sobre este proyecto, por favor contáctame en diegoariel3@gmail.com .
