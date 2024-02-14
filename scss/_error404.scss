@@ -6,7 +6,7 @@
     height: 100vh;
     @include flex(column,space-between,flex-end);
 }
-.error-404 h2 {
+.error-404 h1 {
     color: $white;
     font-size: $xl;
     font-weight: $bold;
