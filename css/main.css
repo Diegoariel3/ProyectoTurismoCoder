@@ -563,7 +563,12 @@ footer a:hover {
   }
   .error-404 h1 {
     font-weight: 400;
+    font-size: 1.6em;
+    margin: 0.4em;
+  }
+  .error-404 p {
     margin: 1em;
+    padding: 0.6em;
   }
   .container .chevron {
     display: none;

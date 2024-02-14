@@ -42,7 +42,12 @@
         background-size: cover;
         h1 {
             font-weight: $regular;
+            font-size: $lg;
+            margin: 0.4em;
+        }
+        p {
             margin: 1em;
+            padding: 0.6em;
         }
     }
     .container .chevron {
